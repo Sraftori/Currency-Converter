@@ -31,7 +31,7 @@
 <div class="fromto grid grid-cols-[1fr_auto_1fr] items-end gap-4" id="fromto">
 
     <div>
-    <select name="from" id="from" class="from w-full bg-white rounded-xl px-3 py-2">
+    <select name="from" id="from" class="from w-full bg-black rounded-xl px-3 py-2">
         <option disabled selected>Loading....</option>
     </select>
 
@@ -41,7 +41,7 @@
 </div>
 
 <div>
-        <select name="to" id="to" class="to w-full bg-white rounded-xl px-3 py-2">
+        <select name="to" id="to" class="to w-full bg-black rounded-xl px-3 py-2">
             <option disabled selected>Loading....</option>
         </select>
 </div>
@@ -56,10 +56,11 @@
 </div>
 
 
-<div id="exchange-result" class="exchange-result" hidden>
-
-    <h3>Exchange Rate:</h3>
-    <p id="rate-result"></p>
+<div id="exchange-result" class="exchange-result mt-6 text-center text-xl font-bold" hidden>
+<span id="amount-entered" class="text-white"></span>
+<span class="text-green-500 mx-2 text-2xl">=</span>
+<span id="rate-result" class="text-orange-400"></span>
+   
 
 
 </div>
